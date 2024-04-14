@@ -45,7 +45,13 @@ public class Sketch extends PApplet {
 
   }
 
-  // Changes background depending on value of intNum
+  /**
+   * Description: Changes background depending on the number the user put in the intNum variable
+   * 
+   * @param intNum Number the user puts in before running code
+   * @return Returns true oor false to change background
+   */
+  
   public boolean backgroundChange(int intNum){
     if (intNum >= 10) {
       return true;
@@ -55,6 +61,15 @@ public class Sketch extends PApplet {
     }
   }
   
+  /**
+   * Description: Draws a stickman using the points provided
+   * 
+   * @param bodyX1 Location of X value for first point on body line
+   * @param bodyY1 Location of Y value for first point on body line
+   * @param bodyX2 Location of X value for second point on body line
+   * @param bodyY2 Location of Y value for second point on body line
+   */
+
   public void drawStickman(float bodyX1, float bodyY1, float bodyX2, float bodyY2) {
     // scaling variable for X values
     float widthScaling = width / 800;
@@ -82,6 +97,15 @@ public class Sketch extends PApplet {
     noFill();
 
   }
+
+  /**
+   * Description: Draws a flower with the center being in the location provided and the width/height provided
+   * 
+   * @param centerX X value of center of circle
+   * @param centerY Y value of center of circle
+   * @param petalWidth Width of circle
+   * @param petalHeight Height of circle
+   */
 
   public void drawFlower(float centerX, float centerY, float petalWidth, float petalHeight){
 
